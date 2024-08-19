@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <center>
+        <style> 
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        div {
+                color:black; 
+            } 
+            aside {
+                    width: 40%;
+                    padding-left: 0.5rem;
+                    margin-left: 0.5rem;
+                    float: right;
+                    box-shadow: inset 5px 0 5px -5px #29627e;
+                    font-style: italic;
+                    color: #29627e;
+                }
+
+            aside > p {
+                margin: 0.5rem;
+            }
+        </style>
+        <div id="balaji"></div>
+            <script>
+                let i = 0;
+                let j=0;
+                // const line1 = " ^ Hey love Pyaar Bubbly Ammu chellam Thangam babe chilli Choco princess cuty Naughty Sweety Crispy Honey Sweetheart Ratchasi Alagi --- wanna say one thing that is  5    4    3   2   1 ";
+                const line1 = "HI"
+                // const line2 = " LOVE YOU AMMU ";
+                const line2 = "Everyone"
+                const word1 = line1.split(" ");
+                const word2 = line2.split(" ");
+                const out= document.getElementById("balaji");
+                function display(){
+                    if(i < word1.length) {
+                        out.innerHTML =  word1[i] + " ";
+                        i++;
+                        setTimeout(display,300);
+                    }
+                    else{
+                        displayfirst()
+                    }
+                }
+                function displayfirst() {
+                    if(j < word2.length) {
+                        out.innerHTML = out.innerHTML + word2[j] + " ";
+                        j++;
+                        setTimeout(displayfirst,100);
+                    }
+                }
+                display()
+            </script>
+            <!-- <img src="Promise.gif" width="500px" > <br> -->
+            <a href="https://www.youtube.com/watch?v=rHuiaFWUtxk">click here to play</a> <br> <hr>
+            <acronym title="Balaji Sankari">BS</acronym> <br>
+
+            
+    </center>
+    
+
+    <div id="output" style="background-color:red"; width="300px"; height="100px";>
+        <h1 style="color:white">Error Makes clever</h1>
+        <p style="color:blue">Chennai</p>
+    </div>
+    
+</body>
+</html>
